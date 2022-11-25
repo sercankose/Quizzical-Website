@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  padding: 2em 4em;
+  color: #293264;
+  background-color: rgba(245, 247, 251, 1);
+  max-width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/***********************************
+             START PAGE
+************************************/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.start-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.start-page > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.start-page > button,
+.check-answer,
+.play-again-button {
+  background-color: #293264;
+  color: #f5f7fb;
+  padding: 1.5em 5em;
+  border-radius: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+/***********************************
+  QUESTION PAGE CONDITION (QUESTION PAGE)
+************************************/
+.question-page {
+  padding-bottom: 1.5em;
+  border-bottom: 0.79px solid rgba(219, 222, 240, 1);
+}
+
+.question-page > h1 {
+  font-size: 1.2rem;
+}
+
+.answers-container {
+  display: flex;
+  width: 100%;
+}
+
+.answers-container > button {
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  margin-right: 1.5em;
+}
+
+.check-answer {
+  display: flex;
+  margin: 2em auto;
+}
+
+.play-again-button {
+  padding: 1em 3em;
+}
+
+.after-check-answer {
+  width: 75%;
+  display: flex;
+  margin: 2em auto;
+  justify-content: space-around;
+}
+
+.after-check-answer > p {
+  font-weight: 600;
+}
+
+/***********************************
+  BUTTON CONDITION (QUESTION PAGE)
+************************************/
+
+.button-first-condition {
+  border: 1px solid #293264;
+  background-color: #f5f7fb;
+  cursor: pointer;
+}
+
+.selecting-answer,
+.correct-answer,
+.wrong-answer {
+  border: 0px;
+  pointer-events: none;
+}
+
+.not-selecting-answer {
+  border: 1px solid #293264;
+  background-color: #f5f7fb;
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.selecting-answer {
+  background-color: #d6dbf5;
+}
+
+.correct-answer {
+  background: rgba(148, 215, 162, 1);
+}
+
+.wrong-answer {
+  background: rgba(248, 188, 188, 1);
 }
