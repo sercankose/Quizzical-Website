@@ -1,3 +1,10 @@
+# Quizzical Website
+
+This is my solo project which was developed by using React.
+
+Quizzical Website creates five different questions depending on random topics. After choosing your answers, you can see your results when clicking check answer button. Also, you can play again.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
